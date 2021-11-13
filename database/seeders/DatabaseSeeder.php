@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             ['title' => 'produqti 4','user_id'=> 10,'price' => 7],
             ['title' => 'produqti 5','user_id'=> 10,'price' => 20],
         );
-        // \App\Models\User::factory(10)->create();
+
         DB::table('products')->insert($products);
 
         $cart = array(
@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
             ['user_id' => 15,'product_id'=> 1,'quantity' => 1],
 
         );
-        // \App\Models\User::factory(10)->create();
+
         DB::table('cart')->insert($cart);
 
         $groups = array(
@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
 
 
         );
-        // \App\Models\User::factory(10)->create();
+
         DB::table('user_product_groups')->insert($groups);
 
         $items = array(
@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
 
 
         );
-        // \App\Models\User::factory(10)->create();
+
         DB::table('product_group_items')->insert($items);
 
     }
